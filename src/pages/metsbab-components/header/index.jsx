@@ -133,7 +133,7 @@ const Header = () => {
                     />
                   </div>
                   <div className="contact-info-text">
-                    <a href="tel:+3(924)4596512">+3(924)4596512</a>
+                    <a href="tel:+1 587-434-2085">+1 587-434-2085</a>
                   </div>
                 </div>
                 <div className="contact-info-single">
@@ -141,7 +141,9 @@ const Header = () => {
                     <FaEnvelope size={16} className="fa-solid fa-envelope" />
                   </div>
                   <div className="contact-info-text">
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a href="mailto:metsbab.ca@gmail.com">
+                      metsbab.ca@gmail.com
+                    </a>
                   </div>
                 </div>
                 <div className="contact-info-single">
@@ -154,9 +156,8 @@ const Header = () => {
                     />
                   </div>
                   <div className="contact-info-text">
-                    <a href="mailto:info@example.com">
-                      55 East Birchwood Ave.Brooklyn, <br /> New York
-                      11201,United States
+                    <a href="mailto:metsbab.ca@gmail.com">
+                      Marbank Drive NE , Calgary, AB, Canada, Alberta
                     </a>
                   </div>
                 </div>
