@@ -1,4 +1,4 @@
-import footerLogo4 from "@/assets/img/logo/vl-footer-logo4.1.png";
+import footerLogo4 from "@/assets/img/logo/metsbab_icon.png";
 // import logo1 from "@/assets/img/logo/vl-logo-4.1.png";
 import logo1 from "@/assets/img/logo/metsbab_icon_wt.png";
 
