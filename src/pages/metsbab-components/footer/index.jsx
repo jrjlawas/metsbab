@@ -120,7 +120,7 @@ const Footer = () => {
                     <Link to="/about">About Us</Link>
                   </li> */}
                   <li>
-                    <a href="#">Appointment</a>
+                    <a href="#">Enrollment</a>
                   </li>
                   {/* <li>
                     <Link to="/blog">News &amp; Blog</Link>
@@ -138,7 +138,25 @@ const Footer = () => {
               <div className="vl-footer-menu">
                 <ul>
                   <li>
-                    <a href="#">Enrollment</a>
+                    <a href="#">Business & Administration</a>
+                  </li>
+                  <li>
+                    <a href="#">Technology & Digital Skills</a>
+                  </li>
+                  <li>
+                    <a href="#">Health & Wellness</a>
+                  </li>
+                  <li>
+                    <a href="#">Beauty & Aesthetics</a>
+                  </li>
+                  <li>
+                    <a href="#">Human Services & Community Support</a>
+                  </li>
+                  <li>
+                    <a href="#">Office & Medical Support</a>
+                  </li>
+                  <li>
+                    <a href="#">Design & Technical</a>
                   </li>
                   {/* <li>
                     <a href="#">Donor Centres</a>

@@ -11,6 +11,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router";
 import { Col, Container, Row } from "react-bootstrap";
 import GlightBox from "@/components/GlightBox";
+
 const Hero = () => {
   const settings = {
     dots: true,
@@ -41,6 +42,74 @@ const Hero = () => {
                     Learn More. Earn More. Succeed Smarter.
                   </h4>
                   <h1 className="title text-anime-style-3">
+                    Study Effectively in Online Learning
+                  </h1>
+                  <p className="para pb-32">
+                    Build your future with Metsbab Services—flexible online
+                    learning, career-focused diplomas, and access to 20+
+                    colleges in just over 50 weeks.
+                  </p>
+                  <div className="btn-flex-area">
+                    <div className="btn-area4">
+                      <Link to="/" className="header-btn1">
+                        Enroll Now{" "}
+                        <span>
+                          <FaArrowRight />
+                        </span>
+                      </Link>
+                    </div>
+                    <div className="vl-video-play">
+                      <a
+                        href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1312641740536048%2F&show_text=false&width=560&t=0"
+                        className="glightbox video-play-button video popup-video"
+                        tabIndex={-1}
+                      >
+                        <span />
+                      </a>
+                      <div className="video-text">
+                        <h6 className="vtitle video">
+                          <a
+                            className="glightbox vtitle video popup-video"
+                            href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1312641740536048%2F&show_text=false&width=560&t=0"
+                          >
+                            Learn More
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col lg={6}>
+                <div className="vl-banner-thumb">
+                  <img
+                    className="w-100 img-fluid"
+                    src={thumb11}
+                    alt="thumb11"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </GlightBox>
+        </Container>
+      </div>
+
+      <div className="vl-banner4">
+        <div className="shape3">
+          <img src={shape4} alt="shape4" />
+        </div>
+        <Container>
+          <GlightBox>
+            <Row>
+              <Col lg={6}>
+                <div className="banner-content">
+                  <h4 className="subtitle">
+                    <span>
+                      <img src={whiteHand4} alt="whiteHand4" />
+                    </span>{" "}
+                    Learn More. Earn More. Succeed Smarter.
+                  </h4>
+                  <h1 className="title text-anime-style-3">
                     Online Network Administration Program
                   </h1>
                   <p className="para pb-32">
@@ -51,7 +120,7 @@ const Hero = () => {
                   <div className="btn-flex-area">
                     <div className="btn-area4">
                       <Link to="/" className="header-btn1">
-                        Book Now{" "}
+                        Enroll Now{" "}
                         <span>
                           <FaArrowRight />
                         </span>
@@ -119,75 +188,7 @@ const Hero = () => {
                   <div className="btn-flex-area">
                     <div className="btn-area4">
                       <Link to="/" className="header-btn1">
-                        Book Now{" "}
-                        <span>
-                          <FaArrowRight />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className="vl-video-play">
-                      <a
-                        href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100093573764738%2Fvideos%2F713811838126303%2F&show_text=false&width=560&t=0"
-                        className="glightbox video-play-button video popup-video"
-                        tabIndex={-1}
-                      >
-                        <span />
-                      </a>
-                      <div className="video-text">
-                        <h6 className="vtitle video">
-                          <a
-                            className="glightbox vtitle video popup-video"
-                            href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100093573764738%2Fvideos%2F713811838126303%2F&show_text=false&width=560&t=0"
-                          >
-                            Learn More
-                          </a>
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="vl-banner-thumb">
-                  <img
-                    className="w-100 img-fluid"
-                    src={thumb11}
-                    alt="thumb11"
-                  />
-                </div>
-              </Col>
-            </Row>
-          </GlightBox>
-        </Container>
-      </div>
-
-      <div className="vl-banner4">
-        <div className="shape3">
-          <img src={shape4} alt="shape4" />
-        </div>
-        <Container>
-          <GlightBox>
-            <Row>
-              <Col lg={6}>
-                <div className="banner-content">
-                  <h4 className="subtitle">
-                    <span>
-                      <img src={whiteHand4} alt="whiteHand4" />
-                    </span>{" "}
-                    Learn More. Earn More. Succeed Smarter.
-                  </h4>
-                  <h1 className="title text-anime-style-3">
-                    Online Network Administration Program
-                  </h1>
-                  <p className="para pb-32">
-                    Empower your future with Metsbab’s affordable Network
-                    Administration program—featuring government funding and
-                    flexible options for every learner.
-                  </p>
-                  <div className="btn-flex-area">
-                    <div className="btn-area4">
-                      <Link to="/" className="header-btn1">
-                        Book Now{" "}
+                        Enroll Now{" "}
                         <span>
                           <FaArrowRight />
                         </span>

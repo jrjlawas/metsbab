@@ -42,13 +42,16 @@ const Header = () => {
                   <div className="main-menu main-menu-4">
                     <ul>
                       <li>
-                        <a href="/">About</a>
+                        <a href="/">Home</a>
                       </li>
                       <li>
-                        <a href="/">Testimonial</a>
+                        <a href="/">Our Programs</a>
                       </li>
                       <li>
-                        <a href="/">Blog</a>
+                        <a href="/">About Us</a>
+                      </li>
+                      <li>
+                        <a href="/">Contact Us</a>
                       </li>
                     </ul>
                   </div>
@@ -102,13 +105,16 @@ const Header = () => {
         <div className="mobile-nav mobile-nav1">
           <ul className="mobile-nav-list nav-list1">
             <li>
-              <a href="/">About</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">Testimonial</a>
+              <a href="/">Our Programs</a>
             </li>
             <li>
-              <a href="/">Blog</a>
+              <a href="/">About Us</a>
+            </li>
+            <li>
+              <a href="/">Contact Us</a>
             </li>
           </ul>
           <div className="allmobilesection">
