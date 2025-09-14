@@ -13,32 +13,16 @@ const Programs = () => {
           <div className="vl-event-content-area">
             <div className="event-content-area">
               <h2 className="title">Our Programs Offerings</h2>
-              {/* <p className="para">
-                We invite you to join us, meet like-minded individuals, and
-                become part of a movement that makes real, lasting change.
-                Whether you attend, volunteer, or help spread the word, your
-                involvement is invaluable. Explore our upcoming events.
-              </p> */}
+              <p className="para">
+                At Metsbab Services, we provide quality education designed to
+                take you from enrollment to employment. With your future as our
+                priority, our programs empower individuals to succeed
+                academically and professionally.
+              </p>
             </div>
             <br></br>
-            <div className="vl-blg-icon-box">
-              <Row>
-                <Col lg={12} md={6}>
-                  <div className="single-blog-box1 mb-30">
-                    {/* <Link to="/blog-single" className="title">
-                      Our Mission
-                    </Link> */}
-                    <p className="para">
-                      At Metsbab Services, we provide quality education designed
-                      to take you from enrollment to employment. With your
-                      future as our priority, our programs empower individuals
-                      to succeed academically and professionally.
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </div>
           </div>
+
           {blogData?.map((item, idx) => (
             <Col lg={4} md={6} key={idx}>
               <div className="vl-single-blg-item mb-30">

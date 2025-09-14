@@ -198,9 +198,10 @@ const Testimonial = () => {
                   data-aos-duration={800}
                   data-aos-delay={300}
                 >
-                  Hear from our students and graduates! Discover real stories of
-                  success, growth, and career transformation through Metsbab
-                  Services programs.
+                  Hear from our students and graduates! Explore inspiring
+                  stories of success, growth, and career transformation made
+                  possible through Metsbab Services programs, in collaboration
+                  with over 30 state colleges and universities worldwide.
                 </p>
                 <div className="btn-area4">
                   <a
@@ -241,6 +242,22 @@ const Testimonial = () => {
                     <span>Available Programs</span>
                   </div>
                 </Col>
+                {/* <Col lg={12} md={4} className="mb-30">
+                  <div className="icon-box-bg active">
+                    <div className="icon">
+                      <span>
+                        <img src={uparrow4} alt="uparrow4" />
+                      </span>
+                    </div>
+                    <h5 className="title">
+                      <span className="title counter">30</span> +
+                    </h5>
+                    <span>
+                      “Over 30 State Colleges and Universities Trust Us
+                      Worldwide”
+                    </span>
+                  </div>
+                </Col> */}
               </Row>
             </div>
           </Col>

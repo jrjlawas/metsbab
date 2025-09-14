@@ -1,13 +1,19 @@
 import footerIcon1 from "@/assets/img/icons/vl-footer-ic-1.1.svg";
 import footerIcon2 from "@/assets/img/icons/vl-footer-ic-1.2.svg";
 import footerIcons from "@/assets/img/icons/vl-footer-2.1.svg";
-// import logo4 from "@/assets/img/logo/vl-footer-logo4.1.png";
 import logo4 from "@/assets/img/logo/metsbab_icon.png";
-import brandLogo1 from "@/assets/img/brand/brand-logo-4.1.png";
-import brandLogo2 from "@/assets/img/brand/brand-logo-4.2.png";
-import brandLogo3 from "@/assets/img/brand/brand-logo-4.3.png";
-import brandLogo4 from "@/assets/img/brand/brand-logo-4.4.png";
-import brandLogo5 from "@/assets/img/brand/brand-logo-4.5.png";
+
+import brandLogo1 from "@/assets/img/metsbab/partners/NIWI.png";
+import brandLogo2 from "@/assets/img/metsbab/partners/GD.png";
+import brandLogo3 from "@/assets/img/metsbab/partners/APC.png";
+import brandLogo4 from "@/assets/img/metsbab/partners/PCMT.svg";
+import brandLogo5 from "@/assets/img/metsbab/partners/RCBC.png";
+import brandLogo6 from "@/assets/img/metsbab/partners/CC.png";
+import brandLogo7 from "@/assets/img/metsbab/partners/MCG.png";
+import brandLogo8 from "@/assets/img/metsbab/partners/GC.png";
+import brandLogo9 from "@/assets/img/metsbab/partners/NW.png";
+import brandLogo10 from "@/assets/img/metsbab/partners/CDI.png";
+
 import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -16,7 +22,7 @@ import { Link } from "react-router";
 const Footer = () => {
   return (
     <footer className="vl-footer-bg-4">
-      {/* <Container>
+      <Container>
         <Row>
           <div id="vl-brand-active4" className="owl-carousel owl-theme">
             <Swiper
@@ -59,12 +65,24 @@ const Footer = () => {
                 <img src={brandLogo5} alt="brandLogo5" />
               </SwiperSlide>
               <SwiperSlide className="single-brand-logo">
-                <img src={brandLogo1} alt="brandLogo1" />
+                <img src={brandLogo6} alt="brandLogo6" />
+              </SwiperSlide>
+              <SwiperSlide className="single-brand-logo">
+                <img src={brandLogo7} alt="brandLogo7" />
+              </SwiperSlide>
+              <SwiperSlide className="single-brand-logo">
+                <img src={brandLogo8} alt="brandLogo8" />
+              </SwiperSlide>
+              <SwiperSlide className="single-brand-logo">
+                <img src={brandLogo9} alt="brandLogo9" />
+              </SwiperSlide>
+              <SwiperSlide className="single-brand-logo">
+                <img src={brandLogo10} alt="brandLogo10" />
               </SwiperSlide>
             </Swiper>
           </div>
         </Row>
-      </Container> */}
+      </Container>
       <Container>
         <Row>
           <Col lg={3} md={6}>
@@ -76,10 +94,10 @@ const Footer = () => {
               </div>
               <div className="vl-footer-content">
                 <p className="para">
-                  At Metsbab Sltd. Education and Career Advice, we believe
-                  knowledge is power—and profit. Our online Network
-                  Administration program is designed to fit your budget, with
-                  government funding options available.
+                  At MetsBab Ltd., we empower you with knowledge that fuels
+                  success. Our online programs are budget-friendly, with
+                  government funding options available to support your education
+                  and career goals.
                 </p>
               </div>
               <div className="vl-footer-social-1">
@@ -184,7 +202,9 @@ const Footer = () => {
                   </span>
                 </div>
                 <div className="vl-footer-text">
-                  <a href="mailto:metsbab.ca@gmail.com">metsbab.ca@gmail.com</a>
+                  <a href="mailto:admissionsadvisormetsbab0@gmail.com">
+                    admissionsadvisor metsbab0@gmail.com
+                  </a>
                 </div>
               </div>
               <div className="vl-footer-icon-list">

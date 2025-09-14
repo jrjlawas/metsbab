@@ -27,9 +27,9 @@ const Hero = () => {
   return (
     <Slider {...settings} className="baner4-active ">
       <div className="vl-banner4">
-        <div className="shape3">
+        {/* <div className="shape3">
           <img src={shape4} alt="shape4" />
-        </div>
+        </div> */}
         <Container>
           <GlightBox>
             <Row>
@@ -95,9 +95,9 @@ const Hero = () => {
       </div>
 
       <div className="vl-banner4">
-        <div className="shape3">
+        {/* <div className="shape3">
           <img src={shape4} alt="shape4" />
-        </div>
+        </div> */}
         <Container>
           <GlightBox>
             <Row>
@@ -163,9 +163,9 @@ const Hero = () => {
       </div>
 
       <div className="vl-banner4">
-        <div className="shape3">
+        {/* <div className="shape3">
           <img src={shape4} alt="shape4" />
-        </div>
+        </div> */}
         <Container>
           <GlightBox>
             <Row>
