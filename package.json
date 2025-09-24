@@ -30,6 +30,7 @@
     "slick-carousel": "^1.8.1",
     "split-type": "^0.3.4",
     "spltjs": "^1.1.0",
+    "styled-components": "^6.1.19",
     "swiper": "^11.2.6"
   },
   "devDependencies": {

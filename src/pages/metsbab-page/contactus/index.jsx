@@ -1,27 +1,23 @@
 import PageMeta from "@/components/PageMeta.jsx";
 import Header from "../../metsbab-components/header";
-import Hero from "../../metsbab-components/hero";
-import About from "../../metsbab-components/about";
-import Programs from "../../metsbab-components/programs";
-import Testimonial from "../../metsbab-components/testimonial";
+import Hero from "./components/Hero";
 import Contact from "../../metsbab-components/contact";
+import IconArea from "./components/IconArea";
 import Footer from "../../metsbab-components/footer";
 import BackToTop from "@/components/BackToTop.jsx";
 import favLogo4 from "@/assets/img/logo/icon.png";
 
-const HomePage = () => {
+const ContactPage = () => {
   return (
     <>
       <PageMeta title="Metsbab Marketing Sltd." icon={favLogo4} />
       <Header />
       <Hero />
-      <About />
-      <Programs />
-      <Testimonial />
       <Contact />
+      <IconArea />
       <Footer />
       <BackToTop />
     </>
   );
 };
-export default HomePage;
+export default ContactPage;

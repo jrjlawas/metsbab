@@ -88,7 +88,7 @@ const Footer = () => {
           <Col lg={3} md={6}>
             <div className="vl-footer-widget-1 mb-30">
               <div className="vl-footer-logo">
-                <Link to="/multi-page/senior-citizen">
+                <Link to="/">
                   <img src={logo4} alt="logo4" />
                 </Link>
               </div>
@@ -103,11 +103,14 @@ const Footer = () => {
               <div className="vl-footer-social-1">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100093573764738"
+                      target="_"
+                    >
                       <FaFacebookF className="fa-brands fa-facebook-f" />
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">
                       <FaInstagram className="fa-brands fa-instagram" />
                     </a>
@@ -121,7 +124,7 @@ const Footer = () => {
                     <a href="#">
                       <FaGithub className="fa-brands fa-github" />
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -138,7 +141,10 @@ const Footer = () => {
                     <Link to="/about">About Us</Link>
                   </li> */}
                   <li>
-                    <a href="#">Enrollment</a>
+                    <a href="/contactus">Enrollment</a>
+                  </li>
+                  <li>
+                    <a href="/">Referrals</a>
                   </li>
                   {/* <li>
                     <Link to="/blog">News &amp; Blog</Link>
@@ -176,18 +182,6 @@ const Footer = () => {
                   <li>
                     <a href="#">Design & Technical</a>
                   </li>
-                  {/* <li>
-                    <a href="#">Donor Centres</a>
-                  </li>
-                  <li>
-                    <Link to="/pages/team">Volunteering</Link>
-                  </li>
-                  <li>
-                    <a href="#">Your Philanthropy</a>
-                  </li>
-                  <li>
-                    <a href="#">Senior Care</a>
-                  </li> */}
                 </ul>
               </div>
             </div>

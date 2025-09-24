@@ -1,7 +1,7 @@
 import footerLogo4 from "@/assets/img/logo/metsbab_icon.png";
 // import logo1 from "@/assets/img/logo/vl-logo-4.1.png";
 import logo1 from "@/assets/img/logo/metsbab_icon_wt.png";
-
+import styled, { keyframes } from "styled-components";
 import useScrollEvent from "@/hooks/useScrollEvent";
 import useToggle from "@/hooks/useToggle";
 import { Link } from "react-router";
@@ -14,10 +14,40 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaLocationDot,
+  FaAngleDown,
   FaPhoneVolume,
   FaXmark,
   FaYoutube,
 } from "react-icons/fa6";
+
+// Define keyframes
+const throb = keyframes`
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+`;
+
+// Create styled button
+const ThrobbingButton = styled(Link)`
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+  animation: ${throb} 1.2s ease-in-out infinite;
+
+  span {
+    margin-left: 8px;
+  }
+
+  &:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+  }
+`;
+
 const Header = () => {
   const { scrollY } = useScrollEvent();
   const { isOpen, toggle } = useToggle();
@@ -45,24 +75,54 @@ const Header = () => {
                         <a href="/">Home</a>
                       </li>
                       <li>
-                        <a href="/">Our Programs</a>
+                        <a href="#">
+                          Our Programs{" "}
+                          <FaAngleDown className="fa-solid fa-angle-down align-bottom" />
+                        </a>
+                        <ul className="dropdown-padding">
+                          <li>
+                            <Link to="/">Business Administration</Link>
+                          </li>
+                          <li>
+                            <Link to="/">Technology & Digital Skills</Link>
+                          </li>
+                          <li>
+                            <Link to="/">Health & Wellness</Link>
+                          </li>
+                          <li>
+                            <Link to="/">Beauty & Aesthetics</Link>
+                          </li>
+                          <li>
+                            <Link to="/">
+                              Human Services & Community Support
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/">Office & Medical Support</Link>
+                          </li>
+                          <li>
+                            <Link to="/">Design & Technical</Link>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href="/">About Us</a>
                       </li>
                       <li>
-                        <a href="/">Contact Us</a>
+                        <a href="/contactus">Contact Us</a>
                       </li>
                     </ul>
                   </div>
                   <div className="btn-area4">
-                    <Link to="/#" className="header-btn1 headbtn4">
-                      Enroll Now{" "}
-                      <span>
-                        {" "}
-                        <FaArrowRight />
-                      </span>
-                    </Link>
+                    <ThrobbingButton to="/#">
+                      <Link to="/#" className="header-btn1 headbtn4">
+                        Referrals{" "}
+                        <span>
+                          {" "}
+                          <FaArrowRight />
+                        </span>
+                      </Link>
+                    </ThrobbingButton>
                   </div>
                 </div>
               </Col>
@@ -114,14 +174,14 @@ const Header = () => {
               <a href="/">About Us</a>
             </li>
             <li>
-              <a href="/">Contact Us</a>
+              <a href="/contactus">Contact Us</a>
             </li>
           </ul>
           <div className="allmobilesection">
             <div className="vl-about-btn">
               <div className="btn-area4">
                 <Link to="/" className="header-btn1">
-                  Enroll Now{" "}
+                  Referrals{" "}
                   <span>
                     <FaArrowRight className="fa-solid fa-arrow-right" />
                   </span>
@@ -147,8 +207,8 @@ const Header = () => {
                     <FaEnvelope size={16} className="fa-solid fa-envelope" />
                   </div>
                   <div className="contact-info-text">
-                    <a href="mailto:metsbab.ca@gmail.com">
-                      metsbab.ca@gmail.com
+                    <a href="mailto:admissionsadvisormetsbab0@gmail.com">
+                      admissionsadvisormetsbab0@gmail.com
                     </a>
                   </div>
                 </div>
@@ -174,12 +234,13 @@ const Header = () => {
                       <li>
                         <a
                           className="d-flex align-items-center justify-content-center"
-                          href="#"
+                          href="https://www.facebook.com/profile.php?id=100093573764738"
+                          target="_"
                         >
                           <FaFacebookF className="fa-brands fa-facebook-f" />
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           className="d-flex align-items-center justify-content-center"
                           href="#"
@@ -202,7 +263,7 @@ const Header = () => {
                         >
                           <FaYoutube className="fa-brands fa-youtube" />
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

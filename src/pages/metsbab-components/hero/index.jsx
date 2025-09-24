@@ -14,11 +14,11 @@ import GlightBox from "@/components/GlightBox";
 
 const Hero = () => {
   const settings = {
-    dots: true,
-    infinite: true,
+    dots: false,
+    infinite: false,
     slidesToShow: 1,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     style: {
       backgroundImage: `url(${homeBg})`,
@@ -27,9 +27,6 @@ const Hero = () => {
   return (
     <Slider {...settings} className="baner4-active ">
       <div className="vl-banner4">
-        {/* <div className="shape3">
-          <img src={shape4} alt="shape4" />
-        </div> */}
         <Container>
           <GlightBox>
             <Row>
@@ -46,12 +43,12 @@ const Hero = () => {
                   </h1>
                   <p className="para pb-32">
                     Build your future with Metsbab Services—flexible online
-                    learning, career-focused diplomas, and access to 20+
+                    learning, career-focused diplomas, and access to 30+
                     colleges in just over 50 weeks.
                   </p>
                   <div className="btn-flex-area">
                     <div className="btn-area4">
-                      <Link to="/" className="header-btn1">
+                      <Link to="/contactus" className="header-btn1">
                         Enroll Now{" "}
                         <span>
                           <FaArrowRight />
@@ -80,7 +77,7 @@ const Hero = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg={6}>
+              <Col lg={6} className="d-none d-lg-block">
                 <div className="vl-banner-thumb">
                   <img
                     className="w-100 img-fluid"
@@ -95,9 +92,6 @@ const Hero = () => {
       </div>
 
       <div className="vl-banner4">
-        {/* <div className="shape3">
-          <img src={shape4} alt="shape4" />
-        </div> */}
         <Container>
           <GlightBox>
             <Row>
@@ -110,16 +104,16 @@ const Hero = () => {
                     Learn More. Earn More. Succeed Smarter.
                   </h4>
                   <h1 className="title text-anime-style-3">
-                    Online Network Administration Program
+                    Study Effectively in Online Learning
                   </h1>
                   <p className="para pb-32">
-                    Empower your future with Metsbab’s affordable Network
-                    Administration program—featuring government funding and
-                    flexible options for every learner.
+                    Build your future with Metsbab Services—flexible online
+                    learning, career-focused diplomas, and access to 30+
+                    colleges in just over 50 weeks.
                   </p>
                   <div className="btn-flex-area">
                     <div className="btn-area4">
-                      <Link to="/" className="header-btn1">
+                      <Link to="/contactus" className="header-btn1">
                         Enroll Now{" "}
                         <span>
                           <FaArrowRight />
@@ -128,7 +122,7 @@ const Hero = () => {
                     </div>
                     <div className="vl-video-play">
                       <a
-                        href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100093573764738%2Fvideos%2F713811838126303%2F&show_text=false&width=560&t=0"
+                        href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1312641740536048%2F&show_text=false&width=560&t=0"
                         className="glightbox video-play-button video popup-video"
                         tabIndex={-1}
                       >
@@ -138,7 +132,7 @@ const Hero = () => {
                         <h6 className="vtitle video">
                           <a
                             className="glightbox vtitle video popup-video"
-                            href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100093573764738%2Fvideos%2F713811838126303%2F&show_text=false&width=560&t=0"
+                            href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1312641740536048%2F&show_text=false&width=560&t=0"
                           >
                             Learn More
                           </a>
@@ -148,7 +142,7 @@ const Hero = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg={6}>
+              <Col lg={6} className="d-none d-lg-block">
                 <div className="vl-banner-thumb">
                   <img
                     className="w-100 img-fluid"
@@ -161,221 +155,6 @@ const Hero = () => {
           </GlightBox>
         </Container>
       </div>
-
-      <div className="vl-banner4">
-        {/* <div className="shape3">
-          <img src={shape4} alt="shape4" />
-        </div> */}
-        <Container>
-          <GlightBox>
-            <Row>
-              <Col lg={6}>
-                <div className="banner-content">
-                  <h4 className="subtitle">
-                    <span>
-                      <img src={whiteHand4} alt="whiteHand4" />
-                    </span>{" "}
-                    Learn More. Earn More. Succeed Smarter.
-                  </h4>
-                  <h1 className="title text-anime-style-3">
-                    Online Network Administration Program
-                  </h1>
-                  <p className="para pb-32">
-                    Empower your future with Metsbab’s affordable Network
-                    Administration program—featuring government funding and
-                    flexible options for every learner.
-                  </p>
-                  <div className="btn-flex-area">
-                    <div className="btn-area4">
-                      <Link to="/" className="header-btn1">
-                        Enroll Now{" "}
-                        <span>
-                          <FaArrowRight />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className="vl-video-play">
-                      <a
-                        href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100093573764738%2Fvideos%2F713811838126303%2F&show_text=false&width=560&t=0"
-                        className="glightbox video-play-button video popup-video"
-                        tabIndex={-1}
-                      >
-                        <span />
-                      </a>
-                      <div className="video-text">
-                        <h6 className="vtitle video">
-                          <a
-                            className="glightbox vtitle video popup-video"
-                            href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100093573764738%2Fvideos%2F713811838126303%2F&show_text=false&width=560&t=0"
-                          >
-                            Learn More
-                          </a>
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="vl-banner-thumb">
-                  <img
-                    className="w-100 img-fluid"
-                    src={thumb11}
-                    alt="thumb11"
-                  />
-                </div>
-              </Col>
-            </Row>
-          </GlightBox>
-        </Container>
-      </div>
-
-      {/* <div className="vl-banner4">
-        <div className="shape2">
-          <img src={arrowImg2} alt="arrowImg2" />
-        </div>
-        <div className="shape3">
-          <img src={shape4} alt="shape4" />
-        </div>
-        <div className="shape">
-          <img src={arrowImg1} alt="arrowImg2" />
-        </div>
-        <Container>
-          <GlightBox>
-            <Row>
-              <Col lg={6}>
-                <div className="banner-content">
-                  <h4 className="subtitle">
-                    <span>
-                      <img src={whiteHand4} alt="whiteHand4" />
-                    </span>
-                    Senior Citizen Celebrating the Among Us
-                  </h4>
-                  <h1 className="title">
-                    Inspiring Acts <br /> Of Kindness <br /> And Service
-                  </h1>
-                  <p className="para pb-32">
-                    In times when the world feels uncertain, inspiring <br />{" "}
-                    acts of kindness and service shine as powerful.
-                  </p>
-                  <div className="btn-flex-area">
-                    <div className="btn-area4">
-                      <Link to="/pages/contact" className="header-btn1">
-                        Spread Kindness{" "}
-                        <span>
-                          <FaArrowRight />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className="vl-video-play">
-                      <a
-                        href="https://www.youtube.com/watch?v=HkYGxh1XUGQ"
-                        className="glightbox video-play-button video popup-video"
-                        tabIndex={-1}
-                      >
-                        <span />
-                      </a>
-                      <div className="video-text">
-                        <h6 className="vtitle video">
-                          <a
-                            className="glightbox vtitle video popup-video"
-                            href="https://www.youtube.com/watch?v=HkYGxh1XUGQ"
-                          >
-                            How We Work
-                          </a>
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="vl-banner-thumb">
-                  <img
-                    className="w-100 img-fluid"
-                    src={thumb11}
-                    alt="thumb11"
-                  />
-                </div>
-              </Col>
-            </Row>
-          </GlightBox>
-        </Container>
-      </div>
-
-      <div className="vl-banner4">
-        <div className="shape2">
-          <img src={arrowImg2} alt="arrowImg2" />
-        </div>
-        <div className="shape3">
-          <img src={shape4} alt="shape4" />
-        </div>
-        <div className="shape">
-          <img src={arrowImg1} alt="arrowImg2" />
-        </div>
-        <Container>
-          <GlightBox>
-            <Row>
-              <Col lg={6}>
-                <div className="banner-content">
-                  <h4 className="subtitle">
-                    <span>
-                      <img src={whiteHand4} alt="whiteHand4" />
-                    </span>
-                    Senior Citizen Celebrating the Among Us
-                  </h4>
-                  <h1 className="title">
-                    Inspiring Acts <br /> Of Kindness <br /> And Service
-                  </h1>
-                  <p className="para pb-32">
-                    In times when the world feels uncertain, inspiring <br />{" "}
-                    acts of kindness and service shine as powerful.
-                  </p>
-                  <div className="btn-flex-area">
-                    <div className="btn-area4">
-                      <Link to="/pages/contact" className="header-btn1">
-                        Spread Kindness{" "}
-                        <span>
-                          <FaArrowRight />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className="vl-video-play">
-                      <a
-                        href="https://www.youtube.com/watch?v=HkYGxh1XUGQ"
-                        className="glightbox video-play-button video popup-video"
-                        tabIndex={-1}
-                      >
-                        <span />
-                      </a>
-                      <div className="video-text">
-                        ``
-                        <h6 className="vtitle video">
-                          <a
-                            className="glightbox vtitle video popup-video"
-                            href="https://www.youtube.com/watch?v=HkYGxh1XUGQ"
-                          >
-                            How We Work
-                          </a>
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-              <Col lg={6}>
-                <div className="vl-banner-thumb">
-                  <img
-                    className="w-100 img-fluid"
-                    src={thumb11}
-                    alt="thumb11"
-                  />
-                </div>
-              </Col>
-            </Row>
-          </GlightBox>
-        </Container>
-      </div> */}
     </Slider>
   );
 };

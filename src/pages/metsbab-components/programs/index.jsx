@@ -12,7 +12,7 @@ const Programs = () => {
         <Row>
           <div className="vl-event-content-area">
             <div className="event-content-area">
-              <h2 className="title">Our Programs Offerings</h2>
+              <h2 className="title">Explore Our Programs</h2>
               <p className="para">
                 At Metsbab Services, we provide quality education designed to
                 take you from enrollment to employment. With your future as our
