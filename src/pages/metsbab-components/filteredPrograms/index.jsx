@@ -1,36 +1,34 @@
-import { blogData } from "./data";
-import calenderImg from "@/assets/img/icons/vl-calender-1.1.svg";
-import userImg from "@/assets/img/icons/vl-user-1.1.svg";
+import { programsData } from "./data";
 import { Link } from "react-router";
 import { FaAngleLeft, FaAngleRight, FaArrowRight } from "react-icons/fa6";
 import { Col, Container, Row } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-const Programs = () => {
-  const navigate = useNavigate();
-
-  const ViewPrograms = (id) => {
-    navigate(`/programs/${id}`);
-  };
+const FilteredPrograms = () => {
+  const { id } = useParams();
+  const ViewPrograms = (id) => {};
+  const programslists = programsData.filter(
+    (programsData) => programsData.catid == id
+  );
   return (
     <section className="vl-blog-inner sp2">
       <Container>
         <Row>
           <div className="vl-event-content-area">
             <div className="event-content-area">
-              <h2 className="title">Explore Our Programs</h2>
-              <p className="para">
+              <h2 className="title">Our Offering Programs</h2>
+              {/* <p className="para">
                 At Metsbab Services, we provide quality education designed to
                 take you from enrollment to employment. With your future as our
                 priority, our programs empower individuals to succeed
                 academically and professionally.
-              </p>
+              </p> */}
             </div>
             <br></br>
           </div>
 
-          {blogData?.map((item, idx) => (
+          {programslists?.map((item, idx) => (
             <Col lg={4} md={6} key={idx}>
               <div className="vl-single-blg-item mb-30">
                 <div className="vl-blg-thumb">
@@ -42,8 +40,8 @@ const Programs = () => {
                   <h3 className="title">
                     <Link to="#">{item.title}</Link>
                   </h3>
-                  <p>{item.excerpt}</p>
-                  <button
+                  <p>{item.description}</p>
+                  {/* <button
                     to="#"
                     onClick={() => ViewPrograms(item.catid)}
                     className="read-more"
@@ -52,7 +50,7 @@ const Programs = () => {
                     <span>
                       <FaArrowRight />
                     </span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </Col>
@@ -62,4 +60,4 @@ const Programs = () => {
     </section>
   );
 };
-export default Programs;
+export default FilteredPrograms;

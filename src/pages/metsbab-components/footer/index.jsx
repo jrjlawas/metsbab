@@ -162,25 +162,25 @@ const Footer = () => {
               <div className="vl-footer-menu">
                 <ul>
                   <li>
-                    <a href="#">Business & Administration</a>
+                    <a href="/programs/1">Business & Administration</a>
                   </li>
                   <li>
-                    <a href="#">Technology & Digital Skills</a>
+                    <a href="/programs/2">Technology & Digital Skills</a>
                   </li>
                   <li>
-                    <a href="#">Health & Wellness</a>
+                    <a href="/programs/3">Health & Wellness</a>
                   </li>
                   <li>
-                    <a href="#">Beauty & Aesthetics</a>
+                    <a href="/programs/4">Beauty & Aesthetics</a>
                   </li>
                   <li>
-                    <a href="#">Human Services & Community Support</a>
+                    <a href="/programs/5">Human Services & Community Support</a>
                   </li>
                   <li>
-                    <a href="#">Office & Medical Support</a>
+                    <a href="/programs/6">Office & Medical Support</a>
                   </li>
                   <li>
-                    <a href="#">Design & Technical</a>
+                    <a href="/programs/7">Design & Technical</a>
                   </li>
                 </ul>
               </div>

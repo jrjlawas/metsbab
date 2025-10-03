@@ -3,6 +3,7 @@ import { lazy } from "react";
 // const Home = lazy(() => import('@/pages/multi-page/home'));
 const Home = lazy(() => import("@/pages/metsbab-page/home"));
 const ContactUs = lazy(() => import("@/pages/metsbab-page/contactus"));
+const ProgramsPage = lazy(() => import("@/pages/metsbab-page/programs"));
 const MultiPageAnimalRescue = lazy(() =>
   import("@/pages/multi-page/animal-rescue")
 );
@@ -52,6 +53,11 @@ const multiPageRoutes = [
     path: "/contactus",
     name: "multi-page-contactUs",
     element: <ContactUs />,
+  },
+  {
+    path: "/programs/:id",
+    name: "multi-page-programpage",
+    element: <ProgramsPage />,
   },
   {
     path: "/multi-page/animal-rescue",

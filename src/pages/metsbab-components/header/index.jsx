@@ -51,6 +51,7 @@ const ThrobbingButton = styled(Link)`
 const Header = () => {
   const { scrollY } = useScrollEvent();
   const { isOpen, toggle } = useToggle();
+
   return (
     <>
       <header>
@@ -81,27 +82,33 @@ const Header = () => {
                         </a>
                         <ul className="dropdown-padding">
                           <li>
-                            <Link to="/">Business Administration</Link>
+                            <Link to="/programs/1">
+                              Business Administration
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Technology & Digital Skills</Link>
+                            <Link to="/programs/2">
+                              Technology & Digital Skills
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Health & Wellness</Link>
+                            <Link to="/programs/3">Health & Wellness</Link>
                           </li>
                           <li>
-                            <Link to="/">Beauty & Aesthetics</Link>
+                            <Link to="/programs/4">Beauty & Aesthetics</Link>
                           </li>
                           <li>
-                            <Link to="/">
+                            <Link to="/programs/5">
                               Human Services & Community Support
                             </Link>
                           </li>
                           <li>
-                            <Link to="/">Office & Medical Support</Link>
+                            <Link to="/programs/6">
+                              Office & Medical Support
+                            </Link>
                           </li>
                           <li>
-                            <Link to="/">Design & Technical</Link>
+                            <Link to="/programs/7">Design & Technical</Link>
                           </li>
                         </ul>
                       </li>
@@ -168,7 +175,35 @@ const Header = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">Our Programs</a>
+              <a href="#">
+                Our Programs{" "}
+                <FaAngleDown className="fa-solid fa-angle-down align-bottom" />
+              </a>
+              <ul className="dropdown-padding">
+                <li>
+                  <Link to="/programs/1">Business Administration</Link>
+                </li>
+                <li>
+                  <Link to="/programs/2">Technology & Digital Skills</Link>
+                </li>
+                <li>
+                  <Link to="/programs/3">Health & Wellness</Link>
+                </li>
+                <li>
+                  <Link to="/programs/4">Beauty & Aesthetics</Link>
+                </li>
+                <li>
+                  <Link to="/programs/5">
+                    Human Services & Community Support
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/programs/6">Office & Medical Support</Link>
+                </li>
+                <li>
+                  <Link to="/programs/7">Design & Technical</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="/">About Us</a>
