@@ -41,6 +41,8 @@ import prog47 from '@/assets/img/metsbab/programs/prog4-7.jpg';
 import prog51 from '@/assets/img/metsbab/programs/prog5-1.svg';
 import prog52 from '@/assets/img/metsbab/programs/prog5-2.svg';
 import prog53 from '@/assets/img/metsbab/programs/prog5-3.svg';
+import prog54 from '@/assets/img/metsbab/programs/prog5-4.svg';
+import prog55 from '@/assets/img/metsbab/programs/prog5-5.svg';
 
 export const programsData = [
   {
@@ -252,13 +254,13 @@ export const programsData = [
     catid: 5,
     category: "Human Services & Community Support",
     title: "Early Learning & Child Care Diploma",
-    image: prog5,
+    image: prog54,
     description: "Prepare for a career nurturing young children’s growth with training in education, development, and classroom support strategies."
   },{
     catid: 5,
     category: "Human Services & Community Support",
     title: "Educational Assistant",
-    image: prog5,
+    image: prog55,
     description: "Gain skills to assist teachers by supporting students’ academic, behavioral, and social development in classroom environments."
   },{
     catid: 5,
