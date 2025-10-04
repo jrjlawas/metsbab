@@ -52,7 +52,7 @@ const AboutReferral = () => {
                       Step1: Refer & Enroll
                     </Link>
                     <p className="para">
-                      Fill out our Referral Form below with your and your
+                      Fill out our Referral Form below with you and your
                       friend’s name — once they enroll through Metsbab, your
                       referral is confirmed!
                     </p>
