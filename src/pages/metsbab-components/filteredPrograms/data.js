@@ -43,6 +43,10 @@ import prog52 from '@/assets/img/metsbab/programs/prog5-2.svg';
 import prog53 from '@/assets/img/metsbab/programs/prog5-3.svg';
 import prog54 from '@/assets/img/metsbab/programs/prog5-4.svg';
 import prog55 from '@/assets/img/metsbab/programs/prog5-5.svg';
+import prog56 from '@/assets/img/metsbab/programs/prog5-6.svg';
+import prog57 from '@/assets/img/metsbab/programs/prog5-7.svg';
+
+import prog61 from '@/assets/img/metsbab/programs/prog6-1.svg';
 
 export const programsData = [
   {
@@ -266,19 +270,19 @@ export const programsData = [
     catid: 5,
     category: "Human Services & Community Support",
     title: "Immigration Administrative Assistant",
-    image: prog5,
+    image: prog56,
     description: "Learn documentation, client support, and legal processes to assist immigration consultants and lawyers in serving newcomers."
   },{
     catid: 5,
     category: "Human Services & Community Support",
     title: "Legal Administrative Assistant",
-    image: prog5,
+    image: prog57,
     description: "Train in office administration, legal documentation, and client communication to support lawyers and law offices efficiently."
   },{
     catid: 6,
     category: "Office & Medical Support",
     title: "Dental Administration Assistant",
-    image: prog6,
+    image: prog61,
     description: "Learn scheduling, patient communication, and dental office procedures to support dentists and ensure smooth clinic operations."
   },{
     catid: 6,
