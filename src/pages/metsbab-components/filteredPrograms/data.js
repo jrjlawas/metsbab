@@ -47,6 +47,10 @@ import prog56 from '@/assets/img/metsbab/programs/prog5-6.svg';
 import prog57 from '@/assets/img/metsbab/programs/prog5-7.svg';
 
 import prog61 from '@/assets/img/metsbab/programs/prog6-1.svg';
+import prog62 from '@/assets/img/metsbab/programs/prog6-2.svg';
+import prog63 from '@/assets/img/metsbab/programs/prog6-3.svg';
+
+import prog71 from '@/assets/img/metsbab/programs/prog7-1.svg';
 
 export const programsData = [
   {
@@ -288,19 +292,19 @@ export const programsData = [
     catid: 6,
     category: "Office & Medical Support",
     title: "Medical Office Assistant / Unit Clerk",
-    image: prog6,
+    image: prog62,
     description: "Train in medical terminology, records management, and patient coordination to keep healthcare offices and hospital units running efficiently."
   },{
     catid: 6,
     category: "Office & Medical Support",
     title: "Administrative Assistant",
-    image: prog6,
+    image: prog63,
     description: "Develop strong organizational, communication, and office management skills to provide professional support across diverse industries and workplaces."
   },{
     catid: 7,
     category: "Design & Technical",
     title: "Architectural Technology",
-    image: prog7,
+    image: prog71,
     description: "Learn design, drafting, and construction technology skills to create functional, sustainable, and visually appealing architectural projects."
   },
 ]
