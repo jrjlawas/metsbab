@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
-const Contact = () => {
+const ReferralForm = () => {
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState({ visible: false, message: "", type: "" });
   const showAlert = (message, type = "success") => {
@@ -19,7 +19,11 @@ const Contact = () => {
     FIRSTNAME: "",
     LASTNAME: "",
     EMAILADDRESS: "",
-    MESSAGE: "",
+    PHONENUMBER: "",
+    FRIENDFIRSTNAME: "",
+    FRIENDLASTNAME: "",
+    FRIENDEMAILADDRESS: "",
+    FRIENDPHONENUMBER: "",
   });
 
   const templateParams = {
@@ -28,13 +32,17 @@ const Contact = () => {
     glotti_email: "jay.romel.lawas@glottii.com",
     client_name: "Metsbab Services",
     sender_name: "Metsbab Mailer",
-    title: "Website Visitor Inquiry",
+    title: "Website Visitor Referrals",
     time: dateTime,
     message: `
     First Name: ${formData.FIRSTNAME}
     Last Name: ${formData.LASTNAME}
     Email Address: ${formData.EMAILADDRESS}
-    Message/Inquiry: ${formData.MESSAGE}
+    Phone Number: ${formData.PHONENUMBER}
+    Friend First Name: ${formData.FRIENDFIRSTNAME}
+    Friend Last Name: ${formData.FRIENDLASTNAME}
+    Friend Email Address: ${formData.FRIENDEMAILADDRESS}
+    Friend Phone Number: ${formData.FRIENDPHONENUMBER}
   `,
   };
   const handleChange = (e) => {
@@ -51,7 +59,11 @@ const Contact = () => {
         !formData.FIRSTNAME ||
         !formData.LASTNAME ||
         !formData.EMAILADDRESS ||
-        !formData.MESSAGE
+        !formData.PHONENUMBER ||
+        !formData.FRIENDFIRSTNAME ||
+        !formData.FRIENDLASTNAME ||
+        !formData.FRIENDEMAILADDRESS ||
+        !formData.FRIENDPHONENUMBER
       ) {
         showAlert("Please fill out all fields before sending.", "error");
         setLoading(false);
@@ -64,10 +76,14 @@ const Contact = () => {
             FIRSTNAME: "",
             LASTNAME: "",
             EMAILADDRESS: "",
-            MESSAGE: "",
+            PHONENUMBER: "",
+            FRIENDFIRSTNAME: "",
+            FRIENDLASTNAME: "",
+            FRIENDEMAILADDRESS: "",
+            FRIENDPHONENUMBER: "",
           });
           showAlert(
-            "Thank you for reaching out to Metsbab Services! We’ve received your inquiry and will get in touch soon to confirm.",
+            "Thank you for reaching out to Metsbab Services! We’ve received your referrals and will get in touch soon to confirm.",
             "success"
           );
           setLoading(false);
@@ -91,25 +107,16 @@ const Contact = () => {
     <section className="vl-contact-section-inner sp2">
       <Container>
         <Row className=" flex-lg-row flex-column-reverse">
-          <Col lg={6} className="mb-30">
-            <div className="vl-maps">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.0434570873686!2d-113.99142691411122!3d51.056978090421275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717b2a601dbaed%3A0xf48dde812b728591!2s3016%205%20Ave%20NE%2C%20Calgary%2C%20AB%20T2A%205L7%2C%20Canada!5e1!3m2!1sen!2sph!4v1759582943977!5m2!1sen!2sph"
-                allowFullScreen
-                className="vl-contact-maps"
-              />
-            </div>
-          </Col>
-          <Col lg={6} className="mb-30">
+          <Col lg={12} className="mb-30">
             <div className="vl-section-content ml-50">
               <div className="section-title">
                 {/* <h4 className="subtitle">Contact Us</h4> */}
-                <h2 className="title">Get in Touch with Us</h2>
-                <p className="para pb-32">
+                <h2 className="title">Submit your referral here</h2>
+                {/* <p className="para pb-32">
                   Have questions or ready to start your journey? Our team is
                   here to help! Reach out today and take the next step toward
                   your career goals.
-                </p>
+                </p> */}
               </div>
               <div className="vl-form-inner">
                 <form action="#">
@@ -120,7 +127,7 @@ const Contact = () => {
                         name="FIRSTNAME"
                         onChange={handleChange}
                         value={formData.FIRSTNAME}
-                        placeholder="First Name*"
+                        placeholder="Your First Name*"
                       />
                     </Col>
                     <Col lg={6}>
@@ -129,27 +136,61 @@ const Contact = () => {
                         name="LASTNAME"
                         onChange={handleChange}
                         value={formData.LASTNAME}
-                        placeholder="Last Name*"
+                        placeholder="Your Last Name*"
                       />
                     </Col>
-                    <Col lg={12}>
+                    <Col lg={6}>
                       <input
                         type="text"
                         name="EMAILADDRESS"
                         onChange={handleChange}
                         value={formData.EMAILADDRESS}
-                        placeholder="Email Address*"
+                        placeholder="Your Email Address*"
                       />
                     </Col>
-
-                    <Col lg={12}>
-                      <textarea
-                        name="MESSAGE"
-                        id="message"
+                    <Col lg={6}>
+                      <input
+                        type="text"
+                        name="PHONENUMBER"
                         onChange={handleChange}
-                        value={formData.MESSAGE}
-                        placeholder="How can we help you?*"
-                        defaultValue={""}
+                        value={formData.PHONENUMBER}
+                        placeholder="Your Phone Number*"
+                      />
+                    </Col>
+                    <Col lg={6}>
+                      <input
+                        type="text"
+                        name="FRIENDFIRSTNAME"
+                        onChange={handleChange}
+                        value={formData.FRIENDFIRSTNAME}
+                        placeholder="Your Friend's First Name*"
+                      />
+                    </Col>
+                    <Col lg={6}>
+                      <input
+                        type="text"
+                        name="FRIENDLASTNAME"
+                        onChange={handleChange}
+                        value={formData.FRIENDLASTNAME}
+                        placeholder="Your Friend's Last Name*"
+                      />
+                    </Col>
+                    <Col lg={6}>
+                      <input
+                        type="text"
+                        name="FRIENDEMAILADDRESS"
+                        onChange={handleChange}
+                        value={formData.FRIENDEMAILADDRESS}
+                        placeholder="Your Friend's Email Address*"
+                      />
+                    </Col>
+                    <Col lg={6}>
+                      <input
+                        type="text"
+                        name="FRIENDPHONENUMBER"
+                        onChange={handleChange}
+                        value={formData.FRIENDPHONENUMBER}
+                        placeholder="Your Friend's Phone Number*"
                       />
                     </Col>
                     <Col lg={12}>
@@ -175,7 +216,7 @@ const Contact = () => {
                             </>
                           ) : (
                             <>
-                              SEND NOW{" "}
+                              Submit Now{" "}
                               <span>
                                 <FaArrowRight />
                               </span>
@@ -184,16 +225,6 @@ const Contact = () => {
                         </button>
                       </div>
                     </Col>
-                    {/* <Col lg={12}>
-                      <div className="btn-area">
-                        <button className="header-btn1">
-                          Send Now{" "}
-                          <span>
-                            <FaArrowRight />
-                          </span>
-                        </button>
-                      </div>
-                    </Col> */}
                   </Row>
                 </form>
               </div>
@@ -204,4 +235,4 @@ const Contact = () => {
     </section>
   );
 };
-export default Contact;
+export default ReferralForm;

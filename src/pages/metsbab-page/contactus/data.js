@@ -15,5 +15,5 @@ export const iconsBoxData = [{
   icon: icon3,
   title: "Our Location",
   description: "Address",
-  contacts: ["Marbank Drive NE , Calgary, Canada, Alberta"]
+  contacts: ["3016 5 Ave NE , Calgary, AB, Canada, Alberta, 3rd Floor Golden Unit 310"]
 }];

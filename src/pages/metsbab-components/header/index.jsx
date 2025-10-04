@@ -121,8 +121,8 @@ const Header = () => {
                     </ul>
                   </div>
                   <div className="btn-area4">
-                    <ThrobbingButton to="/#">
-                      <Link to="/#" className="header-btn1 headbtn4">
+                    <ThrobbingButton to="/referrals">
+                      <Link to="/referrals" className="header-btn1 headbtn4">
                         Get $1,000{" "}
                         <span>
                           {" "}
@@ -215,7 +215,7 @@ const Header = () => {
           <div className="allmobilesection">
             <div className="vl-about-btn">
               <div className="btn-area4">
-                <Link to="/" className="header-btn1">
+                <Link to="/referrals" className="header-btn1">
                   Get $1,000{" "}
                   <span>
                     <FaArrowRight className="fa-solid fa-arrow-right" />
@@ -258,7 +258,8 @@ const Header = () => {
                   </div>
                   <div className="contact-info-text">
                     <a href="mailto:metsbab.ca@gmail.com">
-                      Marbank Drive NE , Calgary, AB, Canada, Alberta
+                      3016 5 Ave NE , Calgary, AB, Canada, Alberta, 3rd Floor
+                      Golden Unit 310
                     </a>
                   </div>
                 </div>

@@ -40,7 +40,7 @@ const About = () => {
                   data-aos-duration={800}
                   data-aos-delay={300}
                 >
-                  About Metsbab!
+                  Welcome to Metsbab!
                 </h5>
                 <h2 className="title text-anime-style-3">
                   Empowering Students, Building Futures

@@ -209,7 +209,8 @@ const Footer = () => {
                 </div>
                 <div className="vl-footer-text">
                   <a href="#">
-                    Marbank Drive NE , Calgary, AB, Canada, Alberta
+                    3016 5 Ave NE , Calgary, AB, Canada, Alberta, <br></br>3rd
+                    Floor Golden Unit 310
                   </a>
                 </div>
               </div>
