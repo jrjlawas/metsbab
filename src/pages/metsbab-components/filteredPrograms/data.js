@@ -38,9 +38,12 @@ import prog45 from '@/assets/img/metsbab/programs/prog4-5.jpg';
 import prog46 from '@/assets/img/metsbab/programs/prog4-6.jpg';
 import prog47 from '@/assets/img/metsbab/programs/prog4-7.jpg';
 
+import prog51 from '@/assets/img/metsbab/programs/prog5-1.svg';
+import prog52 from '@/assets/img/metsbab/programs/prog5-2.svg';
+import prog53 from '@/assets/img/metsbab/programs/prog5-3.svg';
 
-
-export const programsData = [{
+export const programsData = [
+  {
     catid: 1,
     category: "Business & Administration",
     title: "Accounting and Payroll Administration",
@@ -231,19 +234,19 @@ export const programsData = [{
     catid: 5,
     category: "Human Services & Community Support",
     title: "Addiction and Community Support Worker",
-    image: prog5,
+    image: prog51,
     description: "Train to provide guidance, resources, and care for individuals overcoming addiction while supporting healthier communities."
   },{
     catid: 5,
     category: "Human Services & Community Support",
     title: "Child & Youth Service Worker",
-    image: prog5,
+    image: prog52,
     description: "Learn to support children and youth through counseling, mentorship, and advocacy in schools, shelters, and community programs."
   },{
     catid: 5,
     category: "Human Services & Community Support",
     title: "Human Services",
-    image: prog5,
+    image: prog53,
     description: "Develop broad skills to assist individuals and families in need, focusing on care, advocacy, and social development."
   },{
     catid: 5,
