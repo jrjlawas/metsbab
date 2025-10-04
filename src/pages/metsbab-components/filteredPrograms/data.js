@@ -1,199 +1,231 @@
-import Sample from '@/assets/img/metsbab/programs/program1.png';
-
-import prog1 from '@/assets/img/metsbab/programs/program1.png';
-import prog2 from '@/assets/img/metsbab/programs/program2.png';
-import prog3 from '@/assets/img/metsbab/programs/program3.png';
 import prog4 from '@/assets/img/metsbab/programs/program4.png';
 import prog5 from '@/assets/img/metsbab/programs/program5.png';
 import prog6 from '@/assets/img/metsbab/programs/program6.png';
 import prog7 from '@/assets/img/metsbab/programs/program7.png';
 
+import prog11 from '@/assets/img/metsbab/programs/prog1-1.jpg';
+import prog12 from '@/assets/img/metsbab/programs/prog1-2.jpg';
+import prog13 from '@/assets/img/metsbab/programs/prog1-3.jpg';
+import prog14 from '@/assets/img/metsbab/programs/prog1-4.jpg';
+import prog15 from '@/assets/img/metsbab/programs/prog1-5.jpg';
+import prog16 from '@/assets/img/metsbab/programs/prog1-6.jpg';
+import prog17 from '@/assets/img/metsbab/programs/prog1-7.jpg';
+import prog18 from '@/assets/img/metsbab/programs/prog1-8.jpg';
+
+import prog21 from '@/assets/img/metsbab/programs/prog2-1.jpg';
+import prog22 from '@/assets/img/metsbab/programs/prog2-2.jpg';
+import prog23 from '@/assets/img/metsbab/programs/prog2-3.jpg';
+import prog24 from '@/assets/img/metsbab/programs/prog2-4.jpg';
+import prog25 from '@/assets/img/metsbab/programs/prog2-5.jpg';
+import prog26 from '@/assets/img/metsbab/programs/prog2-6.jpg';
+import prog27 from '@/assets/img/metsbab/programs/prog2-7.jpg';
+import prog28 from '@/assets/img/metsbab/programs/prog2-8.jpg';
+import prog29 from '@/assets/img/metsbab/programs/prog2-9.jpg';
+
+import prog31 from '@/assets/img/metsbab/programs/prog3-1.jpg';
+import prog32 from '@/assets/img/metsbab/programs/prog3-2.jpg';
+import prog33 from '@/assets/img/metsbab/programs/prog3-3.jpg';
+import prog34 from '@/assets/img/metsbab/programs/prog3-4.jpg';
+import prog35 from '@/assets/img/metsbab/programs/prog3-5.jpg';
+import prog36 from '@/assets/img/metsbab/programs/prog3-6.jpg';
+import prog37 from '@/assets/img/metsbab/programs/prog3-7.jpg';
+
+import prog41 from '@/assets/img/metsbab/programs/prog4-1.jpg';
+import prog42 from '@/assets/img/metsbab/programs/prog4-2.jpg';
+import prog43 from '@/assets/img/metsbab/programs/prog4-3.jpg';
+import prog44 from '@/assets/img/metsbab/programs/prog4-4.jpg';
+import prog45 from '@/assets/img/metsbab/programs/prog4-5.jpg';
+import prog46 from '@/assets/img/metsbab/programs/prog4-6.jpg';
+import prog47 from '@/assets/img/metsbab/programs/prog4-7.jpg';
+
+
+
 export const programsData = [{
     catid: 1,
     category: "Business & Administration",
     title: "Accounting and Payroll Administration",
-    image: prog1,
+    image: prog11,
     description: "Gain skills in financial reporting, payroll systems, and compliance to support businesses with accurate accounting and employee management."
   },{
     catid: 1,
     category: "Business & Administration",
     title: "Administrative Coordinator",
-    image: prog1,
+    image: prog12,
     description: "Learn to manage office operations, schedules, and communication effectively, becoming the backbone of organizational efficiency and productivity."
   },{
     catid: 1,
     category: "Business & Administration",
     title: "Business Administration",
-    image: prog1,
+    image: prog13,
     description: "Develop a strong foundation in management, operations, and decision-making to lead teams and drive business success across industries."
   },{
     catid: 1,
     category: "Business & Administration",
     title: "Business Management",
-    image: prog1,
+    image: prog14,
     description: "Master leadership, planning, and organizational strategies to guide businesses toward growth, innovation, and long-term sustainability."
   },{
     catid: 1,
     category: "Business & Administration",
     title: "Hospitality Business Management",
-    image: prog1,
+    image: prog15,
     description: "Prepare for global opportunities in hotels, restaurants, and tourism through customer service, operations, and leadership training."
   },{
     catid: 1,
     category: "Business & Administration",
     title: "Marketing Coordinator",
-    image: prog1,
+    image: prog16,
     description: "Build expertise in digital and traditional marketing campaigns, branding, and customer engagement to promote businesses effectively."
   },{
     catid: 1,
     category: "Business & Administration",
     title: "Insurance Advisor",
-    image: prog1,
+    image: prog17,
     description: "Learn risk assessment, client advisory, and policy management to help individuals and businesses secure financial protection."
   },{
     catid: 1,
     category: "Business & Administration",
     title: "Supply Chain Management & Logistics",
-    image: prog1,
+    image: prog18,
     description: "Understand procurement, inventory, and distribution strategies to optimize efficiency and ensure smooth business operations globally."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "Cybersecurity",
-    image: prog2,
+    image: prog21,
     description: "Learn to protect networks, systems, and data from cyber threats through security tools, ethical hacking, and risk management."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "Digital Marketing",
-    image: prog2,
+    image: prog22,
     description: "Master online strategies, SEO, content, and analytics to grow brands and connect businesses with their target audiences."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "Social Media & Digital Marketing",
-    image: prog2,
+    image: prog23,
     description: "Develop creative campaigns across social platforms while using digital tools to engage, influence, and expand customer reach."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "Graphic Design",
-    image: prog2,
+    image: prog24,
     description: "Build creative skills in visual communication, branding, and digital tools to design impactful graphics for print and online media."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "Web Design and Development",
-    image: prog2,
+    image: prog25,
     description: "Learn to design, build, and maintain responsive, user-friendly websites that combine functionality, aesthetics, and strong performance."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "Software and Web Developer",
-    image: prog2,
+    image: prog26,
     description: "Develop coding expertise to build, test, and deploy software applications and web solutions for diverse business needs."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "Mobile App Developer",
-    image: prog2,
+    image: prog27,
     description: "Design and develop engaging mobile applications for iOS and Android platforms, focusing on usability, performance, and innovation."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "PC Support Specialist",
-    image: prog2,
+    image: prog28,
     description: "Gain hands-on skills in troubleshooting, repairing, and maintaining computer systems to ensure reliable workplace technology performance."
   },{
     catid: 2,
     category: "Technology & Digital Skills",
     title: "Help Desk Analyst",
-    image: prog2,
+    image: prog29,
     description: "Train to provide technical support, resolve IT issues, and deliver excellent customer service in business technology environments."
   },{
     catid: 3,
     category: "Health & Wellness",
     title: "Advanced Massage Therapy",
-    image: prog3,
+    image: prog31,
     description: "Gain advanced therapeutic techniques to treat injuries, relieve pain, and promote wellness through professional hands-on massage therapy."
   },{
     catid: 3,
     category: "Health & Wellness",
     title: "Basic Relaxation Massage",
-    image: prog3,
+    image: prog32,
     description: "Learn foundational massage skills focused on relaxation, stress relief, and improving overall physical and mental well-being."
   },{
     catid: 3,
     category: "Health & Wellness",
     title: "Personal Trainer",
-    image: prog3,
+    image: prog33,
     description: "Develop expertise in fitness, exercise science, and coaching to guide clients toward healthier, stronger, and more active lifestyles."
   },{
     catid: 3,
     category: "Health & Wellness",
     title: "Health Care Aid",
-    image: prog3,
+    image: prog34,
     description: "Train to provide compassionate support with daily living, mobility, and care needs in hospitals, clinics, and home settings."
   },{
     catid: 3,
     category: "Health & Wellness",
     title: "Pharmacy Assistant",
-    image: prog3,
+    image: prog35,
     description: "Learn prescription processing, inventory management, and customer service skills to support pharmacists in delivering safe, efficient care."
   },
   {
     catid: 3,
     category: "Health & Wellness",
     title: "Diagnostic Medical Sonography",
-    image: prog3,
+    image: prog36,
     description: "Master ultrasound imaging techniques to assist physicians in diagnosing medical conditions with precision and patient care excellence."
   },{
     catid: 3,
     category: "Health & Wellness",
     title: "Veterinary Health Care Assistant",
-    image: prog3,
+    image: prog37,
     description: "Acquire skills in animal care, clinical support, and client communication to assist veterinarians in promoting animal health."
   },{
     catid: 4,
     category: "Beauty & Aesthetics",
     title: "Advanced Esthetician Diploma",
-    image: prog4,
+    image: prog41,
     description: "Master advanced skincare treatments, spa therapies, and beauty techniques to provide professional esthetic services in salons or clinics."
   },{
     catid: 4,
     category: "Beauty & Aesthetics",
     title: "Advanced Nail",
-    image: prog4,
+    image: prog42,
     description: "Gain expertise in nail artistry, enhancements, and care techniques to deliver creative and high-quality nail services."
   },{
     catid: 4,
     category: "Beauty & Aesthetics",
     title: "Clinical Esthetician",
-    image: prog4,
+    image: prog43,
     description: "Learn specialized skincare procedures, advanced technologies, and treatment protocols to support dermatology and medical aesthetic practices."
   },{
     catid: 4,
     category: "Beauty & Aesthetics",
     title: "Clinical Esthetics",
-    image: prog4,
+    image: prog44,
     description: "Train in corrective skincare therapies, laser treatments, and advanced facial care for careers in medical and wellness clinics."
   },{
     catid: 4,
     category: "Beauty & Aesthetics",
     title: "Comprehensive Aesthetics",
-    image: prog4,
+    image: prog45,
     description: "Develop well-rounded skills in skincare, makeup, nails, and spa services for a versatile career in the beauty industry."
   },{
     catid: 4,
     category: "Beauty & Aesthetics",
     title: "Barbering",
-    image: prog4,
+    image: prog46,
     description: "Learn classic and modern haircutting, shaving, and grooming techniques to provide professional barbering services with style and precision."
   },{
     catid: 4,
     category: "Beauty & Aesthetics",
     title: "Hair Stylist Program",
-    image: prog4,
+    image: prog47,
     description: "Gain hands-on training in cutting, coloring, styling, and hair care to prepare for a career in hairstyling."
   },{
     catid: 5,

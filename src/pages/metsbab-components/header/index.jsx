@@ -123,7 +123,7 @@ const Header = () => {
                   <div className="btn-area4">
                     <ThrobbingButton to="/#">
                       <Link to="/#" className="header-btn1 headbtn4">
-                        Referrals{" "}
+                        Get $1,000{" "}
                         <span>
                           {" "}
                           <FaArrowRight />
@@ -216,7 +216,7 @@ const Header = () => {
             <div className="vl-about-btn">
               <div className="btn-area4">
                 <Link to="/" className="header-btn1">
-                  Referrals{" "}
+                  Get $1,000{" "}
                   <span>
                     <FaArrowRight className="fa-solid fa-arrow-right" />
                   </span>
