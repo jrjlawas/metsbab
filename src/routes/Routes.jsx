@@ -5,6 +5,7 @@ const Home = lazy(() => import("@/pages/metsbab-page/home"));
 const ContactUs = lazy(() => import("@/pages/metsbab-page/contactus"));
 const ProgramsPage = lazy(() => import("@/pages/metsbab-page/programs"));
 const ReferralsPage = lazy(() => import("@/pages/metsbab-page/referrals"));
+const AboutUsPage = lazy(() => import("@/pages/metsbab-page/aboutus"));
 const MultiPageAnimalRescue = lazy(() =>
   import("@/pages/multi-page/animal-rescue")
 );
@@ -64,6 +65,11 @@ const multiPageRoutes = [
     path: "/referrals",
     name: "multi-page-referrals",
     element: <ReferralsPage />,
+  },
+  {
+    path: "/aboutus",
+    name: "multi-page-aboutus",
+    element: <AboutUsPage />,
   },
   {
     path: "/multi-page/animal-rescue",

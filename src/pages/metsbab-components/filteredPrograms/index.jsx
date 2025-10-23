@@ -17,7 +17,7 @@ const FilteredPrograms = () => {
         <Row>
           <div className="vl-event-content-area">
             <div className="event-content-area">
-              <h2 className="title">Our Offering Programs</h2>
+              <h2 className="title">Our Program Offerings</h2>
               {/* <p className="para">
                 At Metsbab Services, we provide quality education designed to
                 take you from enrollment to employment. With your future as our

@@ -8,12 +8,12 @@ export const iconsBoxData = [{
   contacts: ["+1 587-434-2085"]
 }, {
   icon: icon2,
-  title: "Mail Information",
+  title: "E-Mail Information",
   description: "Drop Line",
   contacts: ["admissionsadvisormetsbab0@gmail.com"]
 }, {
   icon: icon3,
   title: "Our Location",
   description: "Address",
-  contacts: ["3016 5 Ave NE , Calgary, AB, Canada, Alberta, 3rd Floor Golden Unit 310"]
+  contacts: ["3rd Floor, Golden Unit 310, 3016 5 Ave NE, Calgary, AB , Canada"]
 }];
