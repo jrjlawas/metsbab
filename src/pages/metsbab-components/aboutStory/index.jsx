@@ -1,6 +1,8 @@
 import thumb1 from "@/assets/img/metsbab/about/abt5.svg";
 import thumb2 from "@/assets/img/metsbab/about/abt6.svg";
 import thumb3 from "@/assets/img/metsbab/about/abt4.svg";
+import thumb4 from "@/assets/img/metsbab/about/abt7.svg";
+import thumb8 from "@/assets/img/metsbab/about/abt8.svg";
 import { Col, Container, Row } from "react-bootstrap";
 const AboutStory = () => {
   return (
@@ -36,6 +38,9 @@ const AboutStory = () => {
               <div className="vl-sm-thumb2 mb-30 reveal">
                 <img className="w-100" src={thumb2} alt="thumb2" />
               </div>
+              <div className="large-thumb mb-30">
+                <img className="w-100" src={thumb8} alt="thumb2" />
+              </div>
             </div>
           </Col>
           <Col lg={6}>
@@ -57,46 +62,9 @@ const AboutStory = () => {
                   helping students unlock their potential and reach new heights
                   across the globe.
                 </p>
-                {/* <div
-                  className="icon-list-box"
-                  data-aos="fade-left"
-                  data-aos-duration={1000}
-                  data-aos-delay={300}
-                >
-                  <ul>
-                    <li>
-                      <span>
-                        <FaCheck className="fa-solid fa-check" />
-                      </span>
-                      Join Our Mission to Make a Difference
-                    </li>
-                    <li>
-                      <span>
-                        <FaCheck className="fa-solid fa-check" />
-                      </span>
-                      Transforming Lives and Communities
-                    </li>
-                    <li>
-                      <span>
-                        <FaCheck className="fa-solid fa-check" />
-                      </span>
-                      Standing Up for Human Rights
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  className="btn5"
-                  data-aos="fade-left"
-                  data-aos-duration={1100}
-                  data-aos-delay={300}
-                >
-                  <Link to="/about" className="btn-priamry1">
-                    Stand with Us{" "}
-                    <span>
-                      <FaArrowRight />
-                    </span>
-                  </Link>
-                </div> */}
+              </div>
+              <div className="large-thumb mb-30">
+                <img className="w-100" src={thumb4} alt="thumb3" />
               </div>
             </div>
           </Col>

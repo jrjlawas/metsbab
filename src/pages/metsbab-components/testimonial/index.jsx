@@ -3,12 +3,11 @@ import arrowBig from "@/assets/img/icons/vl-arrowbig-left.svg";
 import reviewIcon from "@/assets/img/icons/vl-review-icon-4.1.svg";
 import uparrow4 from "@/assets/img/icons/vl-uparrow4.svg";
 import danthumbnail from "@/assets/img/metsbab/testimonials/Dan.jpg";
-import test1 from "@/assets/img/metsbab/testimonials/test1.png";
-import test2 from "@/assets/img/metsbab/testimonials/test2.png";
-
 import { FaAngleLeft, FaAngleRight, FaArrowRight } from "react-icons/fa6";
 import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
+import { testimonialData } from "./data";
+
 const Testimonial = () => {
   const next = () => {
     sliderRef2.current?.slickNext();
@@ -42,13 +41,11 @@ const Testimonial = () => {
                 fade={true}
                 className="slider-thumb slider-for1"
               >
-                <div className="single-thumb">
-                  <img className="w-100" src={danthumbnail} alt="thumbImg" />
-                </div>
-
-                <div className="single-thumb">
-                  <img className="w-100" src={danthumbnail} alt="thumbImg" />
-                </div>
+                {testimonialData.map((item, idx) => (
+                  <div className="single-thumb">
+                    <img className="w-100" src={danthumbnail} alt="thumbImg" />
+                  </div>
+                ))}
               </Slider>
 
               <div className="content-box-2">
@@ -61,104 +58,51 @@ const Testimonial = () => {
                   focusOnSelect={true}
                   className="slider-sm slider-nav1 p-relative"
                 >
-                  <div className="slider-content-box content-box2">
-                    <div className="icon">
-                      <ul>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <p className="para">
-                      “Highly recommend.. Thankyou kuya Dan sa pagguide sakin
-                      simula umpisa hanggang magstart na yung online class ko
-                      kahit super busy ka anjan ka pa din para iguide ako
-                      salamat po ulit kuya godbless po palagi🥰🥰😇”
-                    </p>
-                    <div className="slider-flex">
-                      <div className="user">
-                        <img src={test1} alt="thumbSmImg" />
+                  {testimonialData.map((item, idx) => (
+                    <div className="slider-content-box content-box2">
+                      <div className="icon">
+                        <ul>
+                          <li>
+                            <span>
+                              <img src={reviewIcon} alt="reviewIcon" />
+                            </span>
+                          </li>
+                          <li>
+                            <span>
+                              <img src={reviewIcon} alt="reviewIcon" />
+                            </span>
+                          </li>
+                          <li>
+                            <span>
+                              <img src={reviewIcon} alt="reviewIcon" />
+                            </span>
+                          </li>
+                          <li>
+                            <span>
+                              <img src={reviewIcon} alt="reviewIcon" />
+                            </span>
+                          </li>
+                          <li>
+                            <span>
+                              <img src={reviewIcon} alt="reviewIcon" />
+                            </span>
+                          </li>
+                        </ul>
                       </div>
-                      <div className="content">
-                        <a href="#" className="title">
-                          Kenji Vitacion Orcino
-                        </a>
-                        <span>MetsBab Student</span>
+                      <p className="para">{item.content}</p>
+                      <div className="slider-flex">
+                        <div className="user">
+                          <img src={item.img} alt="thumbSmImg" />
+                        </div>
+                        <div className="content">
+                          <a href="#" className="title">
+                            {item.name}
+                          </a>
+                          <span>{item.role}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="slider-content-box content-box2">
-                    <div className="icon">
-                      <ul>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            <img src={reviewIcon} alt="reviewIcon" />
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <p className="para">
-                      “I had such a great experience with MetsBab Services! Dan,
-                      was so helpful with my school application—he explained
-                      everything clearly, answered all my questions, and made
-                      the process way less stressful. Thank you for your
-                      patience and guidance, Dan! Highly recommend!”
-                    </p>
-                    <div className="slider-flex">
-                      <div className="user">
-                        <img src={test2} alt="thumbSmImg" />
-                      </div>
-                      <div className="content">
-                        <a href="#" className="title">
-                          Jhen Lantoria - Montorio
-                        </a>
-                        <span>MetsBab Student</span>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </Slider>
 
                 <div className="slider-sm slider-nav1 p-relative">
@@ -205,7 +149,7 @@ const Testimonial = () => {
                 </p>
                 <div className="btn-area4">
                   <a
-                    href="/"
+                    href="/contactus"
                     className="header-btn1 testimonial-btn4 testibtn4"
                   >
                     Enroll Now{" "}
